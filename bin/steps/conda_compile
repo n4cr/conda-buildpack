@@ -7,7 +7,7 @@ if [ ! -d /app/.heroku/miniconda ]; then
     sh Miniconda3-latest-Linux-x86_64.sh -p ~/miniconda/ -b
     echo $?
     export PATH="~/miniconda/bin:$PATH"
-    rm -fr Miniconda-${CONDA_VERSION}-Linux-x86_64.sh
+    rm -fr Miniconda3-latest-Linux-x86_64.sh
 
     conda update conda --quiet --yes | indent
 fi
