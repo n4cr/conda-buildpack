@@ -4,8 +4,7 @@ if [ ! -d /app/.heroku/miniconda ]; then
     puts-step "Preparing Python/Miniconda Environment (${CONDA_VERSION})"
     curl -Os http://repo.continuum.io/miniconda/Miniconda-${CONDA_VERSION}-Linux-x86_64.sh
     ls
-    bash Miniconda-${CONDA_VERSION}-Linux-x86_64.sh -p ~/miniconda/ -b
-    bash uname
+    sh Miniconda-${CONDA_VERSION}-Linux-x86_64.sh -p ~/miniconda/ -b
     echo $?
     export PATH="~/miniconda/bin:$PATH"
     rm -fr Miniconda-${CONDA_VERSION}-Linux-x86_64.sh
